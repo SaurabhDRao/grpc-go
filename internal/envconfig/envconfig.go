@@ -50,7 +50,7 @@ var (
 	// option is present for backward compatibility. This option may be overridden
 	// by setting the environment variable "GRPC_ENFORCE_ALPN_ENABLED" to "true"
 	// or "false".
-	EnforceALPNEnabled = boolFromEnv("GRPC_ENFORCE_ALPN_ENABLED", true)
+	EnforceALPNEnabled = boolFromEnv("GRPC_ENFORCE_ALPN_ENABLED", false)
 
 	// XDSEndpointHashKeyBackwardCompat controls the parsing of the endpoint hash
 	// key from EDS LbEndpoint metadata. Endpoint hash keys can be disabled by
